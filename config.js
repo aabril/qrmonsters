@@ -5,7 +5,8 @@ var config = {
     'consumerKey'    : '',
     'consumerSecret' : '',
     'callbackURL'    : '',
-  }
+  },
+  'sqlitedb' : './monsters.db'
 };
 
 module.exports = config;
