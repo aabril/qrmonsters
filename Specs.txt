@@ -1,0 +1,49 @@
+## Specifications
+=================
+
+=================================================================================
+Basic Info
+=================================================================================
+
+Twitter authentication -> passport?
+Database -> mongodb/mysql ?
+
+
+=================================================================================
+URLS
+=================================================================================
+
+### Admin
+---------
+
+#### Admin View
+
+$HOST/admin                  GET  -> List basic functions
+
+
+#### Create monsters
+
+$HOST/admin/monster/create   GET   -> form display to create a monster ; auth required ; role: admin
+$HOST/admin/monster/create   POST  -> form submit to create a monster  ; auth required ; role: admin
+
+#### Display monsters
+
+$HOST/admin/monster/list     GET   -> list all monsters                ; auth required ; role: admin
+$HOST/admin/monster/:id      GET   -> display monster details          ; auth required ; role: admin
+
+
+
+### Game
+--------
+
+#### Portal Check
+
+$HOST/portal               GET   -> display a 404                    ; auth required ; role: all
+$HOST/portal/:id           GET   -> check portal                     ; auth required ; role: all
+
+#### User Custom Screen
+
+$HOST/                     GET   -> list user info
+
+$HOST/profile/edit         GET   -> edit user info (list form)
+$HOST/profile/edit         POST  -> edit user info (submit form)
