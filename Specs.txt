@@ -5,9 +5,9 @@
 Basic Info
 =================================================================================
 
-Twitter authentication -> passport?
-Database -> mongodb/mysql ?
-
+- Twitter authentication -> passport?
+- Database -> mongodb/mysql ?
+- Find a lib for print QRcodes
 
 =================================================================================
 URLS
