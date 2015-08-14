@@ -10,6 +10,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
+var admin = require('./routes/admin');
+var portal = require('./routes/portal');
 
 var app = express();
 
@@ -65,6 +67,16 @@ app.use(function(err, req, res, next) {
     });
     next();
 });
+
+var caminte = require('caminte'),
+Schema = caminte.Schema,
+config = {
+     driver     : 'sqlite3',
+     database   : 'monsters.db'
+};
+
+var schema = new Schema(config.driver, config);
+
 
 
 module.exports = app;
